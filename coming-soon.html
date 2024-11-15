@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Under Construction | Bootstrap 5 Theme</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/tooplate-clean-work.css" rel="stylesheet">
+
+
+<!--
+
+Tooplate 2132 Clean Work
+
+https://www.tooplate.com/view/2132-clean-work
+
+Free Bootstrap 5 HTML Template
+
+-->
+    </head>
+    <style> 
+    /* Styling for the popup */
+    .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            border-radius: 12px;
+            width: 420px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            z-index: 9999;
+            display: none; /* Awalnya tersembunyi */
+        }
+
+        .popup-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .popup-header h5 {
+            margin: 0;
+        }
+
+        .popup-close {
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+
+        .popup-content p {
+            margin: 5px 0;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 9998;
+            display: none; /* Awalnya tersembunyi */
+        }
+
+        .teacher-name, .teacher-carousel {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+    </style> 
+    
+    <body>
+            
+        <header class="site-header">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-lg-12 col-12 d-flex flex-wrap">
+                        <p class="d-flex me-4 mb-0">
+                            <i class="bi-house-fill me-2"></i>
+                            SMP Negeri 2 Kalawat 
+                        </p>
+
+                        <p class="d-flex d-lg-block d-md-block d-none me-4 mb-0">
+                            <i class="bi-clock-fill me-2"></i>
+                            <strong class="me-2">Senin-Jumat</strong> 8:00 AM - 5:30 PM
+                        </p>
+
+                        <p class="site-header-icon-wrap text-white d-flex mb-0 ms-auto">
+                            <i class="site-header-icon bi-whatsapp me-2"></i>
+
+                            <a href="tel: 110-220-9800" class="text-white">
+                                nomor tlpn skolah
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/bubbles.png" class="logo img-fluid" alt="">
+
+                    <span class="ms-2">SMPN 2 kalawat </span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Beranda</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Akademik</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tentang Kami</a>
+
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                <li><a class="dropdown-item" href="services.html">Sejarah</a></li>
+
+                                <li><a class="dropdown-item active" href="coming-soon.html">Guru/Staf</a></li>
+
+                                <li><a class="dropdown-item" href="page-404.html">Fasilitas</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Kontak</a>
+                        </li>
+
+                        <li class="nav-item ms-3">
+                            <a class="nav-link custom-btn custom-border-btn custom-btn-bg-white btn" href="#">Mulai</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+
+            <section class="banner-section d-flex justify-content-center align-items-end">
+                <div class="section-overlay"></div>
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-7 col-12">
+                            <h1 class="text-white mb-lg-0">Guru dan Karyawan</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            ini nanti buat slide ke samping sampai semua guru dapat, tamabh dp box sesesuai dengan guru
+            
+    <section class="testimonial-section section-padding section-bg">
+        <div class="section-overlay"></div>
+
+            <div class="container">
+                 <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Slide Pertama (12 Guru) -->
+                <div class="carousel-item active">
+                    <div class="row">
+                        <!-- 4 guru di setiap baris, total 12 di slide ini -->
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <div class="featured-block">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="images/avatar/happy-customer-01.jpg" class="avatar-image img-fluid">
+                                    <div class="ms-3">
+                                        <h4 class="mb-0">Nama Guru 1</h4>
+                                        <p>Mata Pelajaran</p>
+                                    </div>
+                                </div>
+                                <p class="mb-0">1 kalimat dari guru 1</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <div class="featured-block">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="images/avatar/happy-customer-01.jpg" class="avatar-image img-fluid">
+                                    <div class="ms-3">
+                                        <h4 class="mb-0">Nama Guru 1</h4>
+                                        <p>Mata Pelajaran</p>
+                                    </div>
+                                </div>
+                                <p class="mb-0">1 kalimat dari guru 1</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <div class="featured-block">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="images/avatar/happy-customer-01.jpg" class="avatar-image img-fluid">
+                                    <div class="ms-3">
+                                        <h4 class="mb-0">Nama Guru 1</h4>
+                                        <p>Mata Pelajaran</p>
+                                    </div>
+                                </div>
+                                <p class="mb-0">1 kalimat dari guru 1</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <div class="featured-block">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="images/avatar/happy-customer-01.jpg" class="avatar-image img-fluid">
+                                    <div class="ms-3">
+                                        <h4 class="mb-0">Nama Guru 1</h4>
+                                        <p>Mata Pelajaran</p>
+                                    </div>
+                                </div>
+                                <p class="mb-0">1 kalimat dari guru 1</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <div class="featured-block">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="images/avatar/happy-customer-01.jpg" class="avatar-image img-fluid">
+                                    <div class="ms-3">
+                                        <h4 class="mb-0">Nama Guru 1</h4>
+                                        <p>Mata Pelajaran</p>
+                                    </div>
+                                </div>
+                                <p class="mb-0">1 kalimat dari guru 1</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <div class="featured-block">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="images/avatar/happy-customer-01.jpg" class="avatar-image img-fluid">
+                                    <div class="ms-3">
+                                        <h4 class="mb-0">Nama Guru 1</h4>
+                                        <p>Mata Pelajaran</p>
+                                    </div>
+                                </div>
+                                <p class="mb-0">1 kalimat dari guru 1</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <div class="featured-block">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="images/avatar/happy-customer-01.jpg" class="avatar-image img-fluid">
+                                    <div class="ms-3">
+                                        <h4 class="mb-0">Nama Guru 1</h4>
+                                        <p>Mata Pelajaran</p>
+                                    </div>
+                                </div>
+                                <p class="mb-0">1 kalimat dari guru 1</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <div class="featured-block">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="images/avatar/happy-customer-01.jpg" class="avatar-image img-fluid">
+                                    <div class="ms-3">
+                                        <h4 class="mb-0">Nama Guru 1</h4>
+                                        <p>Mata Pelajaran</p>
+                                    </div>
+                                </div>
+                                <p class="mb-0">1 kalimat dari guru 1</p>
+                            </div>
+                        </div>
+                        <!-- Tambahkan 11 guru lainnya pada slide pertama... -->
+                    </div>
+                </div>
+
+                <!-- Slide Kedua (12 Guru Berikutnya) -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <!-- 4 guru di setiap baris, total 12 di slide ini -->
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <div class="featured-block">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="images/avatar/happy-customer-13.jpg" class="avatar-image img-fluid">
+                                    <div class="ms-3">
+                                        <h4 class="mb-0">Nama Guru 13</h4>
+                                        <p>Mata Pelajaran</p>
+                                    </div>
+                                </div>
+                                <p class="mb-0">1 kalimat dari guru 13</p>
+                            </div>
+                        </div>
+                        <!-- Tambahkan 11 guru lainnya pada slide kedua... -->
+                    </div>
+                </div>
+
+                <!-- Tambahkan slide lainnya untuk 12 guru per slide -->
+                <!-- Slide Ketiga, Keempat, dst... -->
+
+            </div>
+
+            <!-- Kontrol untuk menggeser slider -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+            
+                     
+
+            <section class="section-padding">
+                <div class="container">
+                    <div class="row">
+
+                        
+                        
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12 d-flex align-items-center mb-4 pb-2">
+                        <div>
+                            <img src="images/bubbles.png" class="logo img-fluid" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
+                        <h5 class="site-footer-title mb-3">Sekolah</h5>
+
+                        <p class="text-white d-flex mt-3 mb-2">
+                            <i class="bi-geo-alt-fill me-2"></i>
+                            Alamat Sekolah
+                        </p>
+
+                        <p class="text-white d-flex mb-2">
+                            <i class="bi-telephone-fill me-2"></i>
+
+                            <a href="tel: 110-220-9800" class="site-footer-link">
+                                Nomor Telpon Sekolah
+                            </a>
+                        </p>
+
+                        <p class="text-white d-flex">
+                            <i class="bi-envelope-fill me-2"></i>
+
+                            <a href="mailto:info@company.com" class="site-footer-link">
+                                email sekolah
+                            </a>
+                        </p>
+
+                        <ul class="social-icon mt-4">
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link button button--skoll">
+                                    <span></span>
+                                    <span class="bi-youtube"></span>
+                                </a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link button button--skoll">
+                                    <span></span>
+                                    <span class="bi-facebook"></span>
+                                </a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link button button--skoll">
+                                    <span></span>
+                                    <span class="bi-instagram"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-6 mt-3 mt-lg-0 mt-md-0">
+                        <div class="featured-block">
+                            <h5 class="text-white mb-3">Jam Sekolah</h5>
+
+                            <strong class="d-block text-white mb-1">Mon - Fri</strong>
+
+                            <p class="text-white mb-3">8:00 AM - 5:30 PM</p>
+
+                            <strong class="d-block text-white mb-1">Sat</strong>
+
+                            <p class="text-white mb-0">6:00 AM - 2:30 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="site-footer-bottom">
+                <div class="container">
+                    <div class="row">
+
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.backstretch.min.js"></script>
+        <script src="js/counter.js"></script>
+        <script src="js/countdown.js"></script>
+        <script src="js/init.js"></script>
+        <script src="js/modernizr.js"></script>
+        <script src="js/animated-headline.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>
